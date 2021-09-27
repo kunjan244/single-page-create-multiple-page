@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+:root{
+    --orange: #ff9814;
+
+}
+
+
+
+*{
+    font-family: 'open sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing:border-box;
+     text-decoration: none;
+     outline:none;
+     border:none;
+     text-transform: capitalize;
+     transition: all .2s linear;
+
+}
+*::selection{
+    background:var(--orange);
+    color:#fff;
+
+}
+html{
+    font-size: 62.5;
+    overflow-x: hidden;
+}
+section{
+    padding:0 7%;
+    padding-top:12rem;
+
+}
+.btn{
+    font-size: 2rem;
+    padding: 2px;;
+    background: var(--orange);
+    color:#fff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #333;
+    border-radius: 20px,0px,20px,0px;
+
+}
+
+header{
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    width:100%;
+
+}
+
+header .heading{
+    font-size: 3rem;
+    color: #666;
+    padding:rem;
+    text-align:center;
+
+}
+header #menu{
+    font-size: 3rem;
+    color:#666;
+    cursor: pointer;
+    margin:1rem;
+    display:none;
+    
+}
+header .navbar ul{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ list-style:none;
+ background:var(--orange);
+ padding:1rem;
+
+}
+header .navbar ul li{
+    margin: 0 1.5rem;
+}
+header .navbar ul li a{
+    font-size: 1rem;
+    color:#fff;
+}
+
+
+header .navbar ul li a:hover{
+    color: #444;
+
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:url(../images) no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   flex-wrap: wrap;
+}
+.home .image{
+    flex:1 1 40rem;
+
+}
+.home .image img{
+    width:100%;
+
+}
+.home .content{
+    flex:1 1 40rem;
+}
+.home .content h1{
+    font-size:3rem;
+    color:#444;
+    
+}
+.home .content p{
+    font-size:1rem;
+    color: #666;
+    padding:1rem 0;
+
+    
+}
+
+
+.about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  padding-bottom: 3rem;
+   flex-wrap: wrap;
+}
+.about .image{
+    flex:1 1 40rem;
+
+}
+.about .image img{
+    width:100%;
+
+}
+.about .content{
+    flex:1 1 40rem;
+}
+.home .content h1{
+    font-size:5rem;
+    color:#444;
+    
+    
+}
+.about .content p{
+    font-size:1rem;
+    color: #666;
+    padding:1rem 0;
+
+    
+}
+
+
+{
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color:var(--orange);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 60px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ .service {
+    box-sizing: border-box;
+  }
+  
+ .service .body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+.service .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+.service .h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+ .service .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .service.row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+ .service .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .service.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+ .service .content {
+    background-color:honeydew;
+    padding: 5px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+/*media queries*/
+@media(max-width:760px){
+    html{
+        font-size: 55%;
+
+        
+    }
+    .home .content{
+        text-align: center;
+
+    }
+
+    .home .content h1{
+        font-size: 4rem;
+    }
+    .about .content h1{
+        font-size: 4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    header #menu{
+        display:block;
+    }
+    header .navbar{
+        position: fixed;
+        top:6.2rem; right: 120%;
+        height: 100%;
+        width:100%;
+        border-top:2rem solid rgba(0,0,0,.3);
+    }
+    header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+        background:#fff;
+        padding-bottom: 15rem;
+    }
+    header .navbar ul li{
+        text-align: center;
+        width: 100%;
+        margin:1rem 0;
+
+    }
+    header .navbar ul li a{
+        font-size: 4rem;
+        color: #333;
+    display:block;
+    }
+    header .navbar ul li a:hover{
+        color:var(--orange);
+
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    header .navbar .nav-toggle{
+        right: 0;
+    }
+    section{
+        padding-top:5rem;
+    }
+
+}
+
+ 
